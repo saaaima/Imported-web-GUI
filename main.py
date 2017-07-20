@@ -55,7 +55,50 @@ def read_api():
     read_path=UPLOAD_FOLDER+'POSTLOG.csv'
     prepare_data(session['customer_id'],date_start,date_end,read_path,timezone)
   
-    return render_template('define_duplications.html')
+    return redirect(url_for('reminder_spots'))
+
+@app.route('/reminder_spots')
+def reminder_spots():
+    df1=pd.read_csv(UPLOAD_FOLDER+'POSTLOG.csv')
+   
+    
+    
+    df1=df1.sort_values(['timestamp utc','Sender'])
+    
+    channel_lst=df1['Sender'].unique().tolist()
+    charts=[]
+    for channel in channel_lst:
+        data=df1[df1['Sender']==channel]
+        timeaxis=data['airing time utc'].apply(lambda x: datetime.datetime.strptime(x,'%m/%d/%Y %H:%M:%S')).tolist()
+        xx=data[:-1]['timestamp utc'].apply(lambda x: int(x)).tolist()
+        yy=data[1:]['timestamp utc'].apply(lambda x: int(x)).tolist()
+        
+        z=abs(np.array(xx)-np.array(yy))
+        
+        dic={timeaxis[i]:z[i] for i in range(len(data)-1)}
+        drawdict={k:dic[k] for k in dic.keys() if dic[k]<120}
+        if drawdict!={}:
+           
+            data=[
+                    go.Scatter(
+                            x=drawdict.keys(),
+                            y=drawdict.values(),
+                            mode = 'markers'
+                            )
+                            ]
+            
+            layout = go.Layout(
+            title=channel,
+            yaxis=dict(title='possible reminder spots distribution'),
+            xaxis=dict(title='time')
+            )
+            
+            fig = go.Figure(data=data,layout=layout)
+            my_div=plotly.offline.plot(fig,output_type='div')
+            charts.append(Markup(my_div))
+                
+
+    return render_template('charts.html',My_div=charts)
    
 
 
