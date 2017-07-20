@@ -3,7 +3,7 @@ This is a platform for basic data manipulation and cleaning. It is supposed to f
 It serves as an interactive GUI that helps Chirs, Birte and I prepare cleaned data for any further analysis. 
 Current functions of this platform includes:
 
-1) switch local time to utc time; 
+1) switch local time to utc time, and provide epoch timestamp.
 
 2) display possible reminder spots and drop duplications;
 
