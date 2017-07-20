@@ -6,6 +6,12 @@ Current functions of this platform includes:
 1) switch local time to utc time, and provide epoch timestamp.
 
 2) display possible reminder spots and drop duplications;
+  ![ScreenShot](https://raw.github.com/{saaaima}/{repository}/{master}/{path})
+
+
+
+
+
 
 3) channel name matching; 
   a) Users are give choices to match common channels from postlog to tva.
