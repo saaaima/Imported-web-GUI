@@ -15,6 +15,11 @@ Current functions of this platform includes:
 
 3) channel name matching; 
   a) Users are give choices to match common channels from postlog to tva.
+  
+  ![Sceenshot](https://github.com/saaaima/Imported-web-GUI/blob/master/channel_change.png)
+  
+  
+  
   b) Channels from postlog but not in tva are matched to API automatically. Results are displayed to help users understand
      which channel name has been changed. Users can also correct results if they are mismatched.
   c) all the changes will be stored into a database, therefore there will not be any repeateable works to do in the future.
@@ -22,7 +27,11 @@ Current functions of this platform includes:
 4) commercial name matching;
   a) User are give choices to match commercial names from matched-postlog to tva, with the help of the commercial distribution
      over channels. 
+  ![Sceenshot](https://github.com/saaaima/Imported-web-GUI/blob/master/commercial_change.png)   
+  
   b) Uses are given choices to decide if they want to save the changing of commercials into database. 
+  
+  
   c) All the agreed changes will be stored into a database, and no more repeatable works to do in the future. 
 
 5) airings matching. Results include missing airings, free airings, missing channels and free channels;
