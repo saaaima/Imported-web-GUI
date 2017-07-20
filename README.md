@@ -20,7 +20,7 @@ Current functions of this platform includes:
   
   
    
-  ![Sceenshot](https://github.com/saaaima/Imported-web-GUI/blob/master/channel database.png)
+  ![Sceenshot](https://github.com/saaaima/Imported-web-GUI/blob/master/channel%20database.png)
   
   
   
@@ -35,7 +35,7 @@ Current functions of this platform includes:
   
   
    
-  ![Sceenshot](https://github.com/saaaima/Imported-web-GUI/blob/master/commercial databse.png)
+  ![Sceenshot](https://github.com/saaaima/Imported-web-GUI/blob/master/commercial%20database.png)
   
   
   
