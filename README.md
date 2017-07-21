@@ -10,7 +10,7 @@ Current functions of this platform includes:
 2) switch local time to utc time, and provide epoch timestamp.
 
 3) display possible reminder spots and drop duplications;
-  ![Sceenshot](https://github.com/saaaima/Imported-web-GUI/blob/master/reminder_spots.png)
+  ![Sceenshot](https://github.com/saaaima/Imported-web-GUI/blob/master/display%20reminder%20spots%20page.png)
 
 
 
