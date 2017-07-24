@@ -40,7 +40,7 @@ Current functions of this platform includes:
 
   a) User are give choices to match commercial names from matched-postlog to tva, with the help of the commercial distribution
      over channels. 
-  ![Sceenshot](https://github.com/saaaima/Imported-web-GUI/blob/master/commercial_change.png)   
+     
   
   
    b) Uses are given choices to decide if they want to save the changing of commercials into database. 
